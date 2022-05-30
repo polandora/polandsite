@@ -2,7 +2,7 @@
 session_start();
 if(isset($_SESSION['user']))
 {
-    header("Location: /poland/index.php");
+    header("Location: /autoregistr/index.php");
 }
 session_write_close();
 ?>
@@ -25,7 +25,7 @@ session_write_close();
         <input type="password" name="password" placeholder="Введите пароль">
         <button type="submit">Войти</button>
         <p>
-            У вас нет аккаунта? - <a href="/polandsite/autoregistr/register.php">зарегистрируйтесь</a>!
+            У вас нет аккаунта? - <a href="/autoregistr/register.php">зарегистрируйтесь</a>!
         </p>
         <?php
             if ($_SESSION['message']) {
